@@ -1,1 +1,26 @@
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+    int a,b,c;
+
+    cout << " Introduce tu 1° numero" << endl;
+    cin>>a;
+    cout << " Introduce tu 2° numero" << endl;
+    cin>>b;
+    cout << " Introduce tu 2° numero" << endl;
+    cin>>c;
+
+    if (a>b, a>c){
+        cout <<"El MAYOR ES: " <<a<< endl;
+    }
+    else if(b>a, b>c) {
+        cout <<"El MAYOR es:  " <<b<< endl;
+    }
+    else if(c>a, c>b) {
+        cout <<"El MAYOR es:  " <<c<< endl;
+    }
+    return 0;
+}
