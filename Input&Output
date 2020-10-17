@@ -6,10 +6,9 @@ int main()
 {
     int a,b,c,sum;
 
-    cout << " Input " << endl;
     cin >> a >> b >> c;
     sum=a+b+c;
 
-    cout << " Output \n " << sum << endl;
+    cout << sum << endl;
     return 0;
 }
