@@ -6,13 +6,9 @@ int main()
 {
     int N,M,mof;
 
-    cout <<" Cuantos pastelillos hay: ";
     cin >> N;
-    cout <<" Cuantas personas son: ";
     cin >> M;
-
     mof=(N/M)+(N%M);
-
-    cout <<"Muffins que le tocan a Gil: \n "<< mof << endl;
+    cout << mof << endl;
     return 0;
 }
