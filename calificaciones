@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int c1,c2,c3,ct;
+
+    cin >> c1 >> c2 >> c3;
+    ct=(c1+c2+c3)/3;
+
+    if (ct<6){
+        cout <<"0"<<endl;
+    }
+    else{
+                cout <<"1"<<endl;
+    }
+    return 0;
+}
