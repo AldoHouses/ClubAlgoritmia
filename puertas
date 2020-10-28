@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a,b,n,x;
+
+    cin >> a >> b >> n;
+    x=(2*(2*a))+(2*b);
+
+    cout<<x<<endl;
+
+}
