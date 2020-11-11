@@ -1,14 +1,39 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
-int main()
-{
-    int a,b,n,x;
+int main(){
+    long int a,b,n;
+    cin>> n >> a >> b;
 
-    cin >> a >> b >> n;
-    x=(2*(2*a))+(2*b);
+    int ab=a+b;
+    int bb=b*2;
+    int aa=a*2;
+    int marco=a*2+b;
+    int marcos=marco*2;
+    int respuesta;
 
-    cout<<x<<endl;
+    if(marcos<=n){
+        respuesta=1;
+    }
+    else{
+    if(marco<=n ||(aa*2<=n && bb<=n)){
+        respuesta=2;
+    }
+    else if((aa+a<=n && ab<=n && b<=n)||(aa*2<=n && bb>n)){
+            respuesta=3;
+    }
+    else if ((aa+a<=n && aa*2>n && bb>n && ab>n)||(aa*2<=n && bb>n && ab>n)){
+        respuesta=4;
+    }
+    else if (a<=n && bb<=n && aa>n){
+        respuesta=5;
+    }
+    else{
+    respuesta=6;
+    }
 
+    }
+    cout <<respuesta;
+    return 0;
 }
