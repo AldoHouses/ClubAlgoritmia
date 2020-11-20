@@ -1,0 +1,46 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n,k, coll=0;
+    bool flag=false;
+    cin>>n;
+
+    if(n>0){
+
+    for (int i=0;i<n;i++){
+        cin>>k;
+        switch(k){
+    case 1:
+        coll+=3;
+        break;
+
+    case 2:
+        coll+=5;
+        break;
+
+    case 3:
+        coll+=4;
+        break;
+    default:
+        cout<<"INVALIDO";
+        flag=true;
+        break;
+
+        }
+        if (flag==true){
+            break;
+        }
+    }
+    if (flag==false){
+        cout<<coll;
+    }
+    cout<<coll;
+    }
+    else{
+
+        cout<<"INVALIDO";
+    }
+    return 0;
+}
