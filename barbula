@@ -1,0 +1,15 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+
+int n,s,suma;
+cin>>n;
+for (int i=1;i<=n;i++){
+    s=((i*(i+1))/2);
+    suma+=s;
+}
+    cout<<suma;
+
+	return 0;
+}
