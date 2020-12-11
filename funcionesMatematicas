@@ -1,0 +1,55 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+    int N,n,m,a,b,p;
+    cin>>n;
+    N=n;
+    long double ans[n][2];
+
+    while(n--){
+        cin>>m;
+        switch(m){
+
+        case 1:
+        cin>>a;
+        ans[n][0]=abs(a);
+        ans [n][1]=0;
+        break;
+
+        case 2:
+            cin>>a>>b;
+            ans[n][0]=fmax(a,b);
+            ans [n][1]=0;
+        break;
+
+        case 3:
+            cin>>a>>b;
+            ans[n][0]=fmin(a,b);
+            ans [n][1]=0;
+
+        break;
+
+        case 4:
+            cin>>a;
+            ans[n][0]=sqrt(a);
+            ans [n][1]=1;
+
+        break;
+
+        case 5:
+            cin>>a>>b;
+            ans[n][0]=pow(a,b);
+            ans [n][1]=0;
+
+        break;
+        }
+    }
+    cout<<fixed;
+    while(N--){
+    p=(ans[N][1])? 2: 0;
+    cout<<setprecision(p)<<ans[N][0]<<endl;
+    }
+    return 0;
+}
